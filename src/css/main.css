@@ -1,0 +1,65 @@
+* {
+  transition: 0.3s;
+}
+
+.header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-height: 54px;
+}
+
+nav {
+  background-color: #e3e3e3;
+  position: fixed;
+  top: 54px;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  overflow: auto;
+  z-index: 2;
+  transition: 0.3s;
+}
+nav a.list-group-item {
+  border-radius: 0 !important;
+}
+nav .list-group-item.active {
+  background-color: #e3e3e3 !important;
+  border-color: #e3e3e3 !important;
+  color: #000;
+}
+
+.content {
+  position: absolute;
+  left: 240px;
+  right: 0;
+  top: 54px;
+  bottom: 0;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.navClosed {
+  left: 0;
+}
+
+.thick {
+  border-width: 3px !important;
+}
+
+.dropdown-menu {
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    left: 0;
+  }
+}
+.jumbotron {
+  background-color: #e3e3e3;
+}
+
+/*# sourceMappingURL=main.css.map */
